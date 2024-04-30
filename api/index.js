@@ -36,21 +36,21 @@ app.use('/user', userRoutes);
 const postFetchingRoutes = require('./routes/postFetching');
 app.use('/post-fetching', postFetchingRoutes);
 
-app.use((req, res, next) => {
-    res.setHeader(
-        "Access-Control-Allow-Origin",
-        "http://localhost:5173"
-        //"http://localhost:5173"
-    )
-    res.setHeader(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-    )
-    res.setHeader(
-        "Access-Control-Allow-Methods",
-        "GET, POST"
-    )
-})
+// app.use((req, res, next) => {
+//     res.setHeader(
+//         "Access-Control-Allow-Origin",
+//         "http://localhost:5173"
+//         //"http://localhost:5173"
+//     )
+//     res.setHeader(
+//         "Access-Control-Allow-Headers",
+//         "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+//     )
+//     res.setHeader(
+//         "Access-Control-Allow-Methods",
+//         "GET, POST"
+//     )
+// })
 
 app.listen(5000, () => {
     console.log('server is listening on port 5000...')
