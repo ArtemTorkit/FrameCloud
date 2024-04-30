@@ -10,7 +10,7 @@ const app = express()
 
 // Simplified CORS configuration
 const corsOptions = {
-    origin: 'https://coruscating-cupcake-f1e86a.netlify.app',
+    origin: 'http://localhost:5173',
     methods: ['GET', 'POST'],
     credentials: true,
 };
@@ -39,7 +39,7 @@ app.use('/post-fetching', postFetchingRoutes);
 app.use((req, res, next) => {
     res.setHeader(
         "Access-Control-Allow-Origin",
-        "https://coruscating-cupcake-f1e86a.netlify.app"
+        "http://localhost:5173"
         //"http://localhost:5173"
     )
     res.setHeader(
