@@ -122,7 +122,7 @@ router.route('/get-users').post(async (req, res) => {
             res.status(200).json(result[0])
     } catch (error) {
         console.log(error)
-        res.starus(404).json({message: error})
+        res.status(404).json({message: error})
     }
 }) 
 
