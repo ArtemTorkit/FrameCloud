@@ -10,7 +10,7 @@ const app = express()
 
 // Simplified CORS configuration
 const corsOptions = {
-    origin: 'https://66314c14d551ba1c95166bbc--coruscating-cupcake-f1e86a.netlify.app',
+    origin: 'https://coruscating-cupcake-f1e86a.netlify.app',
     methods: ['GET', 'POST'],
     credentials: true,
 };
